@@ -13,6 +13,10 @@ public class TestaEscopo {
                   acompanhado = false;
             }
 
-            System.out.println("O valor de acompanhado é = " + acompanhado);
+            if (idade >= 18 || acompanhado){
+                  System.out.println("Seja bem-vindo");
+            } else {
+                  System.out.println("Não pode entrar :(");
+            }
       }
 }
