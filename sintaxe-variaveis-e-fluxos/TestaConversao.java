@@ -15,6 +15,22 @@ public class TestaConversao {
 
             // Ou se quiser mais bota um L assim pra enfiar muita coisa
             long numeroBemMaior = 5468465316584635416L;
-            
+
+            // Valor pequeno e inteiro, utiliza menos bytes
+            short numeroPequeno = 12345;
+
+            // Valor bem menor
+            byte b = 123;
+
+            // BUG DO MILÊNIO, OLHA A LOUCURA QUE ACONTECE
+            double valor1 = 0.2;
+            double valor2 = 0.1;
+            double total = valor1 + valor2;
+
+            // Essa soma armazenada acima gera um número bem bizarro
+            // 0.30000000000000004
+            // Não é só no Java, em diversas linguagens de programação
+            System.out.println("=============");
+            System.out.println(total);
       }
 }
