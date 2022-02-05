@@ -11,16 +11,16 @@ public class TestaConversao {
             System.out.println(valor);
       
             // Outros tipos de variáveis, ou seja, até 9 digitos
-            long numeroBemGrandeMesmo = 326841684;
+            // long numeroBemGrandeMesmo = 326841684;
 
             // Ou se quiser mais bota um L assim pra enfiar muita coisa
-            long numeroBemMaior = 5468465316584635416L;
+            // long numeroBemMaior = 5468465316584635416L;
 
             // Valor pequeno e inteiro, utiliza menos bytes
-            short numeroPequeno = 12345;
+            // short numeroPequeno = 12345;
 
             // Valor bem menor
-            byte b = 123;
+            // byte b = 123;
 
             // BUG DO MILÊNIO, OLHA A LOUCURA QUE ACONTECE
             double valor1 = 0.2;
