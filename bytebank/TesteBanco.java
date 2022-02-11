@@ -1,4 +1,4 @@
-public class TestaBanco {
+public class TesteBanco {
       public static void main(String[] args) {
             Cliente vitor = new Cliente();
             vitor.nome = "Vitor Machado";
@@ -9,7 +9,7 @@ public class TestaBanco {
             contaVitor.deposita(100);
             
             // Associação da conta com o cliente
-            contaVitor.titular = vitor;
-            System.out.println(contaVitor.titular.nome);
+            // contaVitor.titular = vitor;
+            // System.out.println(contaVitor.titular.nome);
       }
 }
