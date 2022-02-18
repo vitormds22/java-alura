@@ -12,5 +12,7 @@ public class TesteGerente {
 
             boolean autenticou = pedro.autentica(2222);
             System.out.println(autenticou);
+
+            System.out.println(pedro.getBonicacao());
       }
 }
