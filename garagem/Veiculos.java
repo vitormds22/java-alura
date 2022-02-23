@@ -27,4 +27,12 @@ public class Veiculos{
       public void setVelocidadeMax(double velocidadeMax) {
             this.velocidadeMax = velocidadeMax;
       }
+
+      public void setDono(String dono) {
+            this.dono = dono;
+      }
+
+      public String getDono() {
+            return dono;
+      }
 }

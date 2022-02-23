@@ -7,6 +7,9 @@ public class Main {
             carroVitor.setPassageiros(1);
             carroVitor.setPlaca("ABCD-1234");
             carroVitor.setVelocidadeMax(250);
+            carroVitor.setDono("Vitor");
+
+            System.out.println(carroVitor.getDono());
 
             ControleVeiculo controle = new ControleVeiculo();
 
