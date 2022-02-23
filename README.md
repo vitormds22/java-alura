@@ -17,4 +17,7 @@
 * Getters e Setters
 * O conceito de encapsulamento, para que os atributos fiquem sempre protegidos.
 * Herança e como utilizar para reduizir linhas de códigos e melhorar a leitura do código.
-
+* A herança possui dois pilares muito importantes: Polimorfismo e reutilização de código.
+* Com o polimorfismo podemos alterar o comportamento da classe mãe pela classe filha
+* Ao usarmos a anotação @Override para métodos estamos sobreescrevendo o método da classe mãe
+* Ao herdar uma classe não é passado o construtor da classe mãe, precisa criar um construtor na filha que aponte para o da mãe
