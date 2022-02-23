@@ -18,6 +18,7 @@ public class Conta {
 
       public boolean saca(double valor){
             if(this.saldo >= valor){
+                  this.saldo -= valor;
                   System.out.println("Você sacou R$" + valor + ". Agora possui R$" + this.saldo + ".");
                   return true;
             } else {
@@ -28,7 +29,7 @@ public class Conta {
       }
 
       public boolean transfere(double valor, Conta destino){
-            if(destino.saca(valor)){
+            if(this.saca(valor)){
                   destino.deposita(valor);
                   System.out.println("Você transferiu R$" + valor + " para a conta destino");
                   return true;
