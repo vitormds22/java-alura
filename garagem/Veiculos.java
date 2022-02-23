@@ -1,27 +1,9 @@
-public class Veiculos {
+public class Veiculos{
       private String marca;
       private double velocidadeMax;
       private String placa;
+      private String dono;
 
-      public void ligar() {
-            System.out.println("O veículo ligou");
-       }
- 
-       public double acelerar(){
-             double acelerando = this.getVelocidadeMax();
- 
-             return acelerando;
-       }
- 
-       public String parar(){
-            return "Veículo parado...";
-       }
- 
-       public String freiar(){
-             System.out.println("Freiando...");
-             return this.parar();
-       }
- 
       public String getMarca() {
             return marca;
       }
