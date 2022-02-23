@@ -5,19 +5,8 @@ public class Carro extends Veiculos {
            System.out.println("O carro ligou");
       }
 
-      public double acelerar(Veiculos veiculo){
-            double acelerando = veiculo.getVelocidadeMax();
-
-            return acelerando;
-      }
-
       public String parar(){
            return "Carro parado...";
-      }
-
-      public String freiar(){
-            System.out.println("Freiando...");
-            return this.parar();
       }
 
       public void setPassageiros(int passageiros) {
