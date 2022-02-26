@@ -4,14 +4,14 @@ public class TesteGerente {
             pedro.setNome("Pedro");
             pedro.setCpf("1234567898");
             pedro.setSalario(10000.0);
-            // pedro.setSenha(2222);
+            pedro.setSenha(2222);
 
             System.out.println(pedro.getCpf());
             System.out.println(pedro.getNome());
             System.out.println(pedro.getSalario());
 
-            // boolean autenticou = pedro.autentica(2222, "admin");
-            // System.out.println(autenticou);
+            boolean autenticou = pedro.autentica(2222, "admin");
+            System.out.println(autenticou);
 
             System.out.println(pedro.getBonicacao());
       }

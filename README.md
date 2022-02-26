@@ -30,3 +30,18 @@
 * Existem também métodos abstratos que criamos unica e exclusivamente para polimorfismo
 * Esses métodos não possuem corpo, ou seja, sempre são sobrescritos
 * Isso torna obrigatório implementar esse método nas classes filhas
+
+### Interface
+* É uma classe abstrata com todos os métodos abstratos, no java
+* Nada é concreto
+* É a interface que define uma espécie de modelo que precisa ser implementado pela classe que a implementa
+* Podemos fazer alusão a um contrato
+* A classe assina os termos de que irá implementar os métodos da interface
+* Como tudo é abstrato torna-se obrigatório a implementação
+* É uma alternativa para o polimorfismo, não para reutilização de código
+
+### Composição
+* Classe com métodos concretos
+* É usado esse conceito para reutilização de código
+* Centralizamos uma série de instruções em uma classe e instânciamos uma referência no construtor de outra classe
+* Dessa forma temos acesso e podemos centralizar a manutenção em apenas um lugar
