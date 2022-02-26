@@ -1,6 +1,7 @@
 public class Programador extends Funcionario{
       
       public double getBonicacao(){
-            return super.getBonicacao() + super.getSalario();
+            System.out.println("Chamando classe Programador");
+            return 200;
       } 
 }

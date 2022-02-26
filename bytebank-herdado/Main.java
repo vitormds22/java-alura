@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-          ContaCorrente cc = new ContaCorrente(123, 123);
+          Conta cc = new ContaCorrente(123, 123);
           cc.deposita(100);
 
-          ContaPoupanca cp = new ContaPoupanca(222, 222);
+          Conta cp = new ContaPoupanca(222, 222);
           cp.deposita(200);
 
           cc.transfere(10.0, cp);

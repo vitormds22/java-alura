@@ -6,6 +6,8 @@
 
 ## O que aprendi ? 
 
+###Sintaxe basica e conceitos de POO
+
 * O que é um JDK, JVM e como preparar um ambiente de desenvolvimento java
 * Aprendi a imprimir na tela o "Olá mundo"
 * Método main para compilar todo código escrito
@@ -15,9 +17,16 @@
 * A diferença entre Objeto e Classe sendo que uma é a referência para outra
 * Atributos sempre privados
 * Getters e Setters
+
+### Encapsulamento, Herança e Polimorfismo
 * O conceito de encapsulamento, para que os atributos fiquem sempre protegidos.
 * Herança e como utilizar para reduizir linhas de códigos e melhorar a leitura do código.
 * A herança possui dois pilares muito importantes: Polimorfismo e reutilização de código.
 * Com o polimorfismo podemos alterar o comportamento da classe mãe pela classe filha
 * Ao usarmos a anotação @Override para métodos estamos sobreescrevendo o método da classe mãe
 * Ao herdar uma classe não é passado o construtor da classe mãe, precisa criar um construtor na filha que aponte para o da mãe
+* Sabemos que classes abstratas são relacionadas ao conceito de herança
+* Não podemos instanciar classes abstratas, servem apenas para serem consumidas pelas classes filhas
+* Existem também métodos abstratos que criamos unica e exclusivamente para polimorfismo
+* Esses métodos não possuem corpo, ou seja, sempre são sobrescritos
+* Isso torna obrigatório implementar esse método nas classes filhas
