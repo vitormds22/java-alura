@@ -1,13 +1,5 @@
-public class Gerente extends FuncionarioAutenticavel {
-
-      public void setSenha(int senha) {
-            super.senha = senha;
-      }
-
-      public int getSenha() {
-            return senha;
-      }
-
+public class Gerente extends Funcionario {
+      
       public double getBonicacao(){
             return super.getSalario();
       } 
