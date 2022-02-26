@@ -1,23 +1,32 @@
 public class Carro extends Veiculos {
       private int passageiros;
 
-      public void ligar() {
-           System.out.println("O carro ligou");
-      }
-
-      public String parar(){
-           return "Carro parado...";
-      }
-
       public void setPassageiros(int passageiros) {
-            if(this.passageiros <= 4){
+            if(passageiros <= 4){
                   this.passageiros = passageiros;
-            } else {
-                  System.out.println("O carro está lotado");
+                  System.out.println("O carro tem " + this.passageiros + " passageiros");
+            } else if(passageiros >= this.passageiros) {
+                  System.out.println("O carro possui " + this.passageiros + " passageiros");
+                  System.out.println("Só podem entrar no máximo 4");
             }
       }
 
       public int getPassageiros() {
             return passageiros;
+      }
+
+      @Override
+      public void ligar() {
+            System.out.println("O carro de placa: " + super.getPlaca() + " está ligado!");
+      }
+
+      @Override
+      public void parar() {
+            System.out.println("O carro de placa: " + super.getPlaca() + " está parado!");
+      }
+
+      @Override
+      public void acelerar() {
+            System.out.println("Acelerando até 200km/H");
       }
 }

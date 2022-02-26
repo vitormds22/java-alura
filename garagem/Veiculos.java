@@ -1,9 +1,15 @@
-public class Veiculos{
+public abstract class Veiculos{
       private String marca;
       private double velocidadeMax;
       private String placa;
       private String dono;
 
+      public abstract void ligar();
+ 
+      public abstract void parar();
+
+      public abstract void acelerar();
+      
       public String getMarca() {
             return marca;
       }
