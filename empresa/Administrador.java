@@ -1,33 +1,31 @@
 public class Administrador extends Funcionario implements Autenticavel{
-      private int senha;
-      private String usuario;
+      private Autenticador autenticador;
 
-      @Override
-      public double getBonicacao() {
-            return 50;
+      public Administrador(){
+            this.autenticador = new Autenticador();
+      }
+
+      public double getBonicacao(){
+            return super.getSalario();
       }
 
       @Override
       public boolean autentica(int senha, String usuario){
-            if(this.senha == senha && this.usuario == usuario){
-                  return true;
-            } else {
-                  return false;
-            }
+            return this.autenticador.autentica(senha, usuario);
       }
 
       @Override
       public void setSenha(int senha) {
-            this.senha = senha;
+            this.autenticador.setSenha(senha);
       }
       
       @Override
       public void setUsuario(String usuario) {
-            this.usuario = usuario;
+            this.autenticador.setUsuario(usuario);
       }
 
       @Override
       public String getUsuario() {
-            return usuario;
+           return this.autenticador.getUsuario();
       }
 }
