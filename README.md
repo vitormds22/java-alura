@@ -45,3 +45,22 @@
 * É usado esse conceito para reutilização de código
 * Centralizamos uma série de instruções em uma classe e instânciamos uma referência no construtor de outra classe
 * Dessa forma temos acesso e podemos centralizar a manutenção em apenas um lugar
+
+### Call Stack
+* No java temos uma ordem de execução, chamada de Pilha
+* Por padrão sempre começa pelo main
+* Apenas o método no topo da pilha é executado
+* Quando o bloco de código, método, é finalizado ele é retirado do topo da pilha de execução
+
+### Exceções
+* Exceções são normais em diversas linguagens
+* Elas aparecem quando temos algum tipo de problema de execução no software
+* Podem acontecer com muita frequência, e elas existem para apontar problemas no nosso código
+* Usamos para apontar o motivo do problema
+* A EXCEÇÃO É UMA BOMBA !!! BOMB HAS BEEN PLANTED
+* Uma bomba em cima da pilha de execução.
+* Essa bomba faz com que toda a pilha seja ignorada até que exista uma tratativa para a execeção
+* Para tratarmos uma exceção usamos o comando try e catch
+* Esse processo faz com a execução da pilha não seja interrompida
+* Podemos ter inúmeros catchs para as exceções específicas
+ 
