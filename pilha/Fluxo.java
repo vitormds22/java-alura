@@ -4,27 +4,26 @@ public class Fluxo {
 
             try {
                   metodo1();
-            } catch (ArithmeticException e) {
-                  // String msg = e.getMessage();
-                  // System.out.println("ArithmeticExeception" + msg);
+            } catch (Exception e) {
+                  String msg = e.getMessage();
+                  System.out.println("Exeception " + msg);
                   e.printStackTrace();
             }
 
             System.out.println("Fim do main");
       }
 
-      private static void metodo1() {
+      private static void metodo1() throws MinhaExececao {
           System.out.println("Ini do metodo1");
           metodo2();
           System.out.println("Fim do metodo1");
       }
 
-      private static void metodo2() {
+      private static void metodo2() throws MinhaExececao {
             System.out.println("Ini do metodo2");
-            for (int i = 1; i <= 5; i++) {
-                  System.out.println(i);
-                  int a = i / 0;
-            }
-            System.out.println("Fim do metodo2");
+            
+            throw new MinhaExececao("deu errado");
+
+            // System.out.println("Fim do metodo2");
       }
 }
