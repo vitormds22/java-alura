@@ -14,28 +14,17 @@ public abstract class Conta {
 
       public abstract void deposita(double valor);
 
-      public boolean saca(double valor){
-            if(this.saldo >= valor){
-                  this.saldo -= valor;
-                  System.out.println("Você sacou R$" + valor + ". Agora possui R$" + this.saldo + ".");
-                  return true;
-            } else {
-                  System.out.println("Você não pode sacar pois não possui saldo suficiente."
-                       +  "Seu saldo é de R$" + this.saldo + ".");
-                  return false;
-            }
+      public void saca(double valor) throws SaldoInsuficienteException {
+            if(this.saldo < valor){
+                 throw new SaldoInsuficienteException("Saldo: "  + this.saldo + ", Valor: " + valor);
+            } 
+
+            this.saldo -= valor;
       }
 
-      public boolean transfere(double valor, Conta destino){
-            if(this.saca(valor)){
-                  destino.deposita(valor);
-                  System.out.println("Você transferiu R$" + valor + " para a conta destino");
-                  return true;
-            } else {
-                  System.out.println("Você não pode sacar pois não possui saldo suficiente."
-                       +  "Seu saldo é de R$" + this.saldo + ".");
-                       return false;
-            }
+      public void transfere(double valor, Conta destino) throws SaldoInsuficienteException{
+            this.saca(valor);
+            destino.deposita(valor);
       }
 
       public static int getTotal() {
