@@ -6,7 +6,7 @@
 
 ## O que aprendi ? 
 
-###Sintaxe basica e conceitos de POO
+##Sintaxe basica e conceitos de POO
 
 * O que é um JDK, JVM e como preparar um ambiente de desenvolvimento java
 * Aprendi a imprimir na tela o "Olá mundo"
@@ -63,4 +63,17 @@
 * Para tratarmos uma exceção usamos o comando try e catch
 * Esse processo faz com a execução da pilha não seja interrompida
 * Podemos ter inúmeros catchs para as exceções específicas
- 
+* HEAP - É o lugar onde são guardado os objetos no mundo java
+* Podemos também lançar as exceções quando quisermos usando o throw new Exception();
+* Usando a diretiva <throw> para "jogar" a exceção com a referência criada
+* A saída do método é imediata
+* Existe outra linhagem de classes que extende a classe Throwable, que são as classes de Error
+* Um erro que deu o nome da pagina famosa StackOverflow
+* Esse erro é quando a pilha de métodos do java excedeu o seu limite e interrompe a execução do programa
+* Porém as classes de erros não são manipuladas por nós devs, utiliizaremos apenas as Exceptions quando necessário
+* Classes checked e unchecked
+* Checked -> extende diretamente a classe Exception e obriga a inserir throws MinhaExececao na assinatura do método
+* Unchecked -> extende diretamente da classe RuntimeException e não obriga essa inserção
+* Verificado e não verificado pelo compilador
+* O try/catch possui um bloco que separa e compila o conteúdo do seu bloco após o tratamento chamado finally
+
